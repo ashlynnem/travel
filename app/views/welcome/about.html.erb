@@ -1,0 +1,28 @@
+<style>
+body{
+	background: <%= @color %>;
+}
+</style>
+
+
+<h1>About Me</h1>
+<p>My fav color is <%= @color %>.</p>
+<p>My shoe size is women's <%= @size %>. </p>	
+	
+	<% if @size == 7.5 %>
+
+		<p>YOU HAVE THE PERFECT SIZE FEET!!!</p>
+
+	<% elsif @size >= 12.0 %>
+
+		<p>Wow, that is amazing. Your feet are HUGE!</p>
+
+	<% else %>
+
+		<p>Cool, thanks for sharing!</p>
+
+	<% end %>
+
+
+
+

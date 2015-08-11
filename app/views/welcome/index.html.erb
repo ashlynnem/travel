@@ -1,0 +1,15 @@
+<h1>Welcome to my Travel-less site</h1>
+
+<p>I was born in <%= @homeland %> </p>
+<p>I have been to 0 countries...but, I have been to these states:</p>
+
+
+	<% @images.each do |image| %>
+		<%= image_tag image , width: 400, height: 300 %>
+	<% end %>
+
+
+
+
+
+
